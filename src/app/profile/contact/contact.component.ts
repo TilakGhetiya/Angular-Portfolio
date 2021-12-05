@@ -15,6 +15,6 @@ export class ContactComponent implements OnInit {
   }
 
   mail() {
-    window.open("mailto:developer.tilak@gmail.com"+'?subject='+'Inquiry for app development');
+    window.open("mailto:developer.tilak@gmail.com"+'?subject='+'Enquiry for app development');
   }
 }
