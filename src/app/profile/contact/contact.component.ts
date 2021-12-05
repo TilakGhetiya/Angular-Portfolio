@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ProfileService } from '../profile.service';
-import { SnotifyService } from 'ng-snotify';
-import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-contact',
@@ -18,31 +15,6 @@ export class ContactComponent implements OnInit {
   }
 
   mail() {
-    window.open('mailto:test@example.com');
+    window.open("mailto:developer.tilak@gmail.com"+'?subject='+'Inquiry for app development');
   }
-
-
-  // snotifyConfig = environment.snotifyConfig;
-  // model: any = {};
-
-  // constructor(
-  //   private profile: ProfileService,
-  //   private snotify: SnotifyService
-  // ) { }
-
-  // ngOnInit() {
-  // }
-
-  // contact() {
-  //   this.profile.contactus(this.model).subscribe(data => {
-  //     if (data.status) {
-  //       this.snotify.success(data.message, 'Success', this.snotifyConfig);
-  //     } else {
-  //       this.snotify.warning(data.message, 'Warning', this.snotifyConfig);
-  //     }
-  //   }, err => {
-  //     this.snotify.error('Something went wrong. Try again later.', 'Error', this.snotifyConfig);
-  //   });
-  // }
-
 }
